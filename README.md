@@ -28,7 +28,12 @@ mxbai-embed-large
 starcoder2
 
 ## Extra Features:
+
 Deleting refreshed data.
+
 Delete before or after a specific word.
+
 Adding a specific word to the beginning or end.
+
 Quickly replace a specific part in the code with multiple data.
+
