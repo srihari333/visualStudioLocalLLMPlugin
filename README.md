@@ -48,19 +48,27 @@ It reproduces your code by selecting a specific code and replacing the words you
 For example:
 
 Selected Text
+
 Console.WriteLine(‘Hello’);
 
 Prompt:
+
 Dobis
+
 Hedwis
+
 Arpis
 
 Word: Hello
 
 Conclusion:
+
 Console.WriteLine(‘Dobis’);
+
 Console.WriteLine(‘Hedwis’);
+
 Console.WriteLine(‘Arpis’);
+
 
 ## Erase
 
