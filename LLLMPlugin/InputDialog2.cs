@@ -30,5 +30,21 @@ namespace LLLMPlugin
             this.DialogResult = DialogResult.Cancel; // Formu Cancel olarak kapat
             this.Close();
         }
+
+        private void InputDialog2_Load(object sender, EventArgs e)
+        {
+            this.MinimumSize = new Size(661, 172);
+            this.AutoScaleMode = AutoScaleMode.Dpi;
+
+            txtInput.Location = new Point(12, 12);
+            txtInput.Size = new Size(624, 39);
+
+
+            btnStart.Location = new Point(12, 57);
+            btnStart.Size = new Size(307, 43);
+
+            btnEnd.Location = new Point(321, 57);
+            btnEnd.Size = new Size(307, 43);
+        }
     }
 }

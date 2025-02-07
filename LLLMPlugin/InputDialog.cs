@@ -20,6 +20,18 @@ namespace LLLMPlugin
 
         private void InputDialog_Load(object sender, EventArgs e)
         {
+            this.MinimumSize = new Size(661, 172);
+            this.AutoScaleMode = AutoScaleMode.Dpi;
+
+            txtInput.Location = new Point(12, 12);
+            txtInput.Size = new Size(624, 39);
+
+
+            btnSend.Location = new Point(12, 57);
+            btnSend.Size = new Size(307, 43);
+
+            btnclose.Location = new Point(321, 57);
+            btnclose.Size = new Size(307, 43);
 
         }
         private void btnOK_Click(object sender, EventArgs e)

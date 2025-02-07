@@ -130,7 +130,48 @@ namespace LLLMPlugin
         }
         private void MyForm_Load(object sender, EventArgs e)
         {
+            this.MinimumSize = new Size(1024, 1024); 
+            this.AutoScaleMode = AutoScaleMode.Dpi;
 
+            lbl1.Location = new Point(12, 11);
+            lbl1.Size = new Size(149, 25);
+
+            textBoxInput.Location = new Point(12, 42);
+            textBoxInput.Size = new Size(976, 103); 
+            label2.Location = new Point(12, 148);
+            label2.Size = new Size(125, 25);
+            chatBox.Location = new Point(12, 176);
+            chatBox.Size = new Size(976, 485);
+
+            label3.Location = new Point(12, 670);
+            label3.Size = new Size(80, 25);
+
+
+            Prompt.Location = new Point(12, 698);
+            Prompt.Size = new Size(845, 149);
+
+            btn_SendAi.Location = new Point(865, 698);
+            btn_SendAi.Size = new Size(123, 149);
+
+            btn_Remove.Location = new Point(12, 854);
+            btn_Remove.Size = new Size(211, 97);
+
+
+            btn_ModRep.Location = new Point(229, 854);
+            btn_ModRep.Size = new Size(211, 97);
+
+            btn_EraseStart.Location = new Point(446, 854);
+            btn_EraseStart.Size = new Size(143, 97);
+
+            btn_EraseEnd.Location = new Point(600, 854);
+            btn_EraseEnd.Size = new Size(143, 97);
+
+
+            btn_Sttings.Location = new Point(749, 854);
+            btn_Sttings.Size = new Size(108, 97);
+
+            btn_Credit.Location = new Point(865, 854);
+            btn_Credit.Size = new Size(121, 97);
         }
 
         private void btn_Remove_Click(object sender, EventArgs e)

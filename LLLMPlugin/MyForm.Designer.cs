@@ -31,7 +31,7 @@
             this.textBoxInput = new System.Windows.Forms.TextBox();
             this.chatBox = new System.Windows.Forms.TextBox();
             this.Prompt = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lbl1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btn_Sttings = new System.Windows.Forms.Button();
@@ -45,45 +45,51 @@
             // 
             // textBoxInput
             // 
+            this.textBoxInput.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBoxInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.142858F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBoxInput.Location = new System.Drawing.Point(12, 42);
             this.textBoxInput.Multiline = true;
             this.textBoxInput.Name = "textBoxInput";
             this.textBoxInput.ReadOnly = true;
             this.textBoxInput.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBoxInput.Size = new System.Drawing.Size(966, 103);
+            this.textBoxInput.Size = new System.Drawing.Size(976, 103);
             this.textBoxInput.TabIndex = 2;
             // 
             // chatBox
             // 
+            this.chatBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.chatBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.142858F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.chatBox.Location = new System.Drawing.Point(12, 176);
             this.chatBox.Multiline = true;
             this.chatBox.Name = "chatBox";
             this.chatBox.ReadOnly = true;
-            this.chatBox.Size = new System.Drawing.Size(966, 485);
+            this.chatBox.Size = new System.Drawing.Size(976, 485);
             this.chatBox.TabIndex = 3;
             // 
             // Prompt
             // 
+            this.Prompt.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Prompt.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.142858F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Prompt.Location = new System.Drawing.Point(12, 698);
             this.Prompt.Multiline = true;
             this.Prompt.Name = "Prompt";
             this.Prompt.Size = new System.Drawing.Size(845, 149);
             this.Prompt.TabIndex = 4;
             // 
-            // label1
+            // lbl1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.142858F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(13, 11);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(149, 25);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Selected Area";
+            this.lbl1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.142858F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl1.Location = new System.Drawing.Point(13, 11);
+            this.lbl1.Name = "lbl1";
+            this.lbl1.Size = new System.Drawing.Size(149, 25);
+            this.lbl1.TabIndex = 5;
+            this.lbl1.Text = "Selected Area";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.142858F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.142858F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label2.Location = new System.Drawing.Point(13, 148);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(115, 25);
@@ -92,20 +98,22 @@
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.142858F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.142858F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label3.Location = new System.Drawing.Point(13, 670);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(87, 25);
+            this.label3.Size = new System.Drawing.Size(80, 25);
             this.label3.TabIndex = 7;
             this.label3.Text = "Prompt:";
             // 
             // btn_Sttings
             // 
-            this.btn_Sttings.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.142858F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn_Sttings.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_Sttings.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.142858F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btn_Sttings.Location = new System.Drawing.Point(749, 854);
             this.btn_Sttings.Name = "btn_Sttings";
-            this.btn_Sttings.Size = new System.Drawing.Size(108, 49);
+            this.btn_Sttings.Size = new System.Drawing.Size(108, 97);
             this.btn_Sttings.TabIndex = 0;
             this.btn_Sttings.Text = "Settings";
             this.btn_Sttings.UseVisualStyleBackColor = true;
@@ -113,10 +121,11 @@
             // 
             // btn_Remove
             // 
-            this.btn_Remove.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.142858F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn_Remove.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_Remove.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.142858F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btn_Remove.Location = new System.Drawing.Point(12, 854);
             this.btn_Remove.Name = "btn_Remove";
-            this.btn_Remove.Size = new System.Drawing.Size(211, 49);
+            this.btn_Remove.Size = new System.Drawing.Size(211, 97);
             this.btn_Remove.TabIndex = 0;
             this.btn_Remove.Text = "Remove Duplicate";
             this.btn_Remove.UseVisualStyleBackColor = true;
@@ -124,10 +133,11 @@
             // 
             // btn_ModRep
             // 
-            this.btn_ModRep.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.142858F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn_ModRep.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_ModRep.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.142858F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btn_ModRep.Location = new System.Drawing.Point(229, 854);
             this.btn_ModRep.Name = "btn_ModRep";
-            this.btn_ModRep.Size = new System.Drawing.Size(211, 49);
+            this.btn_ModRep.Size = new System.Drawing.Size(211, 97);
             this.btn_ModRep.TabIndex = 0;
             this.btn_ModRep.Text = "Modify && replicate";
             this.btn_ModRep.UseVisualStyleBackColor = true;
@@ -135,10 +145,11 @@
             // 
             // btn_EraseStart
             // 
-            this.btn_EraseStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.142858F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn_EraseStart.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_EraseStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.142858F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btn_EraseStart.Location = new System.Drawing.Point(446, 854);
             this.btn_EraseStart.Name = "btn_EraseStart";
-            this.btn_EraseStart.Size = new System.Drawing.Size(143, 49);
+            this.btn_EraseStart.Size = new System.Drawing.Size(143, 97);
             this.btn_EraseStart.TabIndex = 0;
             this.btn_EraseStart.Text = "Erase";
             this.btn_EraseStart.UseVisualStyleBackColor = true;
@@ -146,10 +157,11 @@
             // 
             // btn_EraseEnd
             // 
-            this.btn_EraseEnd.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.142858F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn_EraseEnd.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_EraseEnd.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.142858F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btn_EraseEnd.Location = new System.Drawing.Point(600, 854);
             this.btn_EraseEnd.Name = "btn_EraseEnd";
-            this.btn_EraseEnd.Size = new System.Drawing.Size(143, 49);
+            this.btn_EraseEnd.Size = new System.Drawing.Size(143, 97);
             this.btn_EraseEnd.TabIndex = 0;
             this.btn_EraseEnd.Text = "Add";
             this.btn_EraseEnd.UseVisualStyleBackColor = true;
@@ -157,10 +169,11 @@
             // 
             // btn_Credit
             // 
-            this.btn_Credit.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.142858F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn_Credit.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_Credit.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.142858F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btn_Credit.Location = new System.Drawing.Point(865, 854);
             this.btn_Credit.Name = "btn_Credit";
-            this.btn_Credit.Size = new System.Drawing.Size(115, 49);
+            this.btn_Credit.Size = new System.Drawing.Size(121, 97);
             this.btn_Credit.TabIndex = 0;
             this.btn_Credit.Text = "Credit";
             this.btn_Credit.UseVisualStyleBackColor = true;
@@ -168,10 +181,11 @@
             // 
             // btn_SendAi
             // 
-            this.btn_SendAi.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.142858F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn_SendAi.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_SendAi.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.142858F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btn_SendAi.Location = new System.Drawing.Point(865, 698);
             this.btn_SendAi.Name = "btn_SendAi";
-            this.btn_SendAi.Size = new System.Drawing.Size(115, 149);
+            this.btn_SendAi.Size = new System.Drawing.Size(123, 149);
             this.btn_SendAi.TabIndex = 0;
             this.btn_SendAi.Text = "Send AI";
             this.btn_SendAi.UseVisualStyleBackColor = true;
@@ -181,10 +195,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(990, 909);
+            this.ClientSize = new System.Drawing.Size(1000, 960);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lbl1);
             this.Controls.Add(this.Prompt);
             this.Controls.Add(this.chatBox);
             this.Controls.Add(this.textBoxInput);
@@ -210,7 +224,7 @@
         private System.Windows.Forms.TextBox textBoxInput;
         private System.Windows.Forms.TextBox chatBox;
         private System.Windows.Forms.TextBox Prompt;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbl1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btn_Sttings;
