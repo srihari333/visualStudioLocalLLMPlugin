@@ -10,9 +10,17 @@ While working on Visual Studio. you can use the tools you want by opening the to
 ## Assignment Process:
 Visual Studio - Tools - Keyboard - Whow Commands Containing LocalLLLMPlug
 
-
 ## Supported Servers.
 OLLAMA
+
+## Ollama Install
+
+Download: https://ollama.com/download
+Model: https://ollama.com/search
+
+After installing and running the Ollama server, you can download and run the model you want. Then you can select and save your server settings and model from the Plugin settings section. 
+
+ollama run deepseek-r1:1.5b
 
 ## Supported Models:
 deeepseek-r1
@@ -29,11 +37,37 @@ starcoder2
 
 ## Extra Features:
 
-Deleting refreshed data.
+### Remove Duplicate: 
 
-Delete before or after a specific word.
+It removes all duplicate lines in the code section you have selected and quickly edits your code.
 
-Adding a specific word to the beginning or end.
+### Modify & Replicate:
 
-Quickly replace a specific part in the code with multiple data.
+It reproduces your code by selecting a specific code and replacing the words you will write in the prompt section with the word you have selected.
+
+For example:
+
+Selected Text
+Console.WriteLine(‘Hello’);
+
+Prompt:
+Dobis
+Hedwis
+Arpis
+
+Word: Hello
+
+Conclusion:
+Console.WriteLine(‘Dobis’);
+Console.WriteLine(‘Hedwis’);
+Console.WriteLine(‘Arpis’);
+
+## Erase
+
+It edits the word or sentence you will write by deleting it from the front or back of the code block you have selected.
+
+## Add
+
+It edits the word or sentence you will write by adding it from the front or back of the code block you have selected.
+
 
