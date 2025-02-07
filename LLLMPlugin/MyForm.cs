@@ -21,27 +21,27 @@ namespace LLLMPlugin
 {
     public partial class MyForm : Form
     {
-        
-            public bool IsConfirmed { get; private set; } = false;
-            public string UserInputText => textBoxInput.Text;
-            public string  ChatBoxlines => chatBox.Text;
 
-            public MyForm(string initialText)
-            {
-                InitializeComponent();
-                textBoxInput.Text = initialText;
-            }
+        public bool IsConfirmed { get; private set; } = false;
+        public string UserInputText => textBoxInput.Text;
+        public string ChatBoxlines => chatBox.Text;
 
-            private async void btnOK_Click(object sender, EventArgs e)
-            {
-              await SendPostRequestApiChatAsync(textBoxInput.Text + Prompt.Text);
-               
-            }
+        public MyForm(string initialText)
+        {
+            InitializeComponent();
+            textBoxInput.Text = initialText;
+        }
 
-            private void btnCancel_Click(object sender, EventArgs e)
-            {
-                this.Close();
-            }
+        private async void btnOK_Click(object sender, EventArgs e)
+        {
+            await SendPostRequestApiChatAsync(textBoxInput.Text + Prompt.Text);
+
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
         private async Task SendPostRequestApiChatAsync(string data)
 
         {
@@ -53,30 +53,30 @@ namespace LLLMPlugin
             {
                 using (var client = new HttpClient())
                 {
-                  
+
                     var requestData = new
                     {
                         model = model,
                         prompt = data
                     };
-                     
+
                     string jsonString = JsonConvert.SerializeObject(requestData);
- 
+
                     var request = new HttpRequestMessage(HttpMethod.Post, url);
 
-              
+
                     var content = new StringContent(jsonString, Encoding.UTF8, "application/json");
                     request.Content = content;
 
                     try
                     {
-                      
+
                         var response = await client.SendAsync(request);
 
-                        
+
                         response.EnsureSuccessStatusCode();
 
-                     
+
                         var responseBody = await response.Content.ReadAsStringAsync();
 
                         var responseParts = responseBody.Split(new[] { "\n" }, StringSplitOptions.RemoveEmptyEntries);
@@ -145,7 +145,7 @@ namespace LLLMPlugin
         private void btn_ModRep_Click(object sender, EventArgs e)
         {
             string[] lines = textBoxInput.Lines;
-             
+
             string[] replacementWords = Prompt.Lines;
 
             InputDialog inputDialog = new InputDialog();
@@ -159,28 +159,28 @@ namespace LLLMPlugin
                     return;
                 }
 
-              
+
                 var resultLines = new System.Collections.Generic.List<string>();
 
-               
+
                 foreach (var line in lines)
                 {
                     if (line.Contains(inputWord))
                     {
-                       
+
                         foreach (var replacementWord in replacementWords)
-                        { 
-                            resultLines.Add(line.Replace(inputWord, replacementWord)); 
+                        {
+                            resultLines.Add(line.Replace(inputWord, replacementWord));
                         }
                     }
                     else
                     {
-                       
+
                         resultLines.Add(line);
                     }
                 }
 
-           
+
                 chatBox.Lines = resultLines.ToArray();
                 IsConfirmed = true;
                 this.DialogResult = DialogResult.OK;
@@ -203,7 +203,7 @@ namespace LLLMPlugin
                     return;
                 }
 
- 
+
                 var resultLines = new System.Collections.Generic.List<string>();
 
                 foreach (var line in inputText)
@@ -285,9 +285,9 @@ namespace LLLMPlugin
 
                 foreach (var line in inputText)
                 {
- 
-                        resultLines.Add(replacementWord +  line );
-                    
+
+                    resultLines.Add(replacementWord + line);
+
                 }
 
 
@@ -328,7 +328,7 @@ namespace LLLMPlugin
         {
             Settings SettingsD = new Settings();
             SettingsD.ShowDialog();
-            
-         }
+
+        }
     }
 }

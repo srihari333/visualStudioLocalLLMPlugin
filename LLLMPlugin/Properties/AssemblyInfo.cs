@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("LLLMPlugin")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("VisualStudioLocalLLMPlugin-WithOllama-ExtraTool")]
+[assembly: AssemblyDescription("VisualStudioLocalLLMPlugin-WithOllama-ExtraTool")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("LLLMPlugin")]
-[assembly: AssemblyCopyright("")]
+[assembly: AssemblyCompany("SpaceAndTab Company")]
+[assembly: AssemblyProduct("VisualStudioLocalLLMPlugin-WithOllama-ExtraTool")]
+[assembly: AssemblyCopyright("SpaceAndTab Company")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

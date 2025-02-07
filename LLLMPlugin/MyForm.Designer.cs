@@ -195,6 +195,8 @@
             this.Controls.Add(this.btn_Credit);
             this.Controls.Add(this.btn_Sttings);
             this.Controls.Add(this.btn_SendAi);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "MyForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "visualStudioLocalLLMPlugin";
