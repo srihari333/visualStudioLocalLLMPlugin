@@ -5,7 +5,11 @@ To get help from Local AI quickly on Visual Studio. Thanks to Local LLM, to ensu
 
 ## How does it work?
 
-While working on Visual Studio. You can use the tools you want by opening the tool with the CTRL + 3 combination. You can get help from artificial intelligence by writing a message. You can send your selected codes to artificial intelligence with a single button and make it work on those codes. 
+While working on Visual Studio. you can use the tools you want by opening the tool with the key combination you will assign. You can get help from artificial intelligence by writing a message. You can send the codes you choose to the artificial intelligence with a single button and have it work on those codes. 
+
+## Assignment Process:
+Visual Studio - Tools - Keyboard - Whow Commands Containing LocalLLLMPlug
+
 
 ## Supported Servers.
 OLLAMA
