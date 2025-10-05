@@ -1,6 +1,6 @@
-﻿namespace LLLMPlugin
+﻿namespace LLMPlugin
 {
-    partial class MyForm
+    partial class PluginForm
     {
         /// <summary>
         /// Required designer variable.

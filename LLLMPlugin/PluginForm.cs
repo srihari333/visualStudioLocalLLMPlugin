@@ -17,16 +17,16 @@ using System.Text.RegularExpressions;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using static System.Windows.Forms.LinkLabel;
 
-namespace LLLMPlugin
+namespace LLMPlugin
 {
-    public partial class MyForm : Form
+    public partial class PluginForm : Form
     {
 
         public bool IsConfirmed { get; private set; } = false;
         public string UserInputText => textBoxInput.Text;
         public string ChatBoxlines => chatBox.Text;
 
-        public MyForm(string initialText)
+        public PluginForm(string initialText)
         {
             InitializeComponent();
             textBoxInput.Text = initialText;

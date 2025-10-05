@@ -58,11 +58,11 @@
     <Compile Include="InputDialog2.Designer.cs">
       <DependentUpon>InputDialog2.cs</DependentUpon>
     </Compile>
-    <Compile Include="MyForm.cs">
+    <Compile Include="PluginForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MyForm.Designer.cs">
-      <DependentUpon>MyForm.cs</DependentUpon>
+    <Compile Include="PluginForm.Designer.cs">
+      <DependentUpon>PluginForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="LLLMPluginPackage.cs" />
@@ -102,8 +102,16 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.VisualStudio.SDK" Version="17.0.32112.339" ExcludeAssets="runtime" />
-    <PackageReference Include="Microsoft.VSSDK.BuildTools" Version="17.10.2179" />
+    <PackageReference Include="Microsoft.VisualStudio.SDK" Version="17.14.40265" ExcludeAssets="runtime">
+      <IncludeAssets>compile; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VSSDK.BuildTools" Version="17.14.2120">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="System.Net.Http">
+      <Version>4.3.4</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <VSCTCompile Include="LLLMPluginPackage.vsct">
@@ -120,8 +128,8 @@
     <EmbeddedResource Include="InputDialog2.resx">
       <DependentUpon>InputDialog2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MyForm.resx">
-      <DependentUpon>MyForm.cs</DependentUpon>
+    <EmbeddedResource Include="PluginForm.resx">
+      <DependentUpon>PluginForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Settings.resx">
       <DependentUpon>Settings.cs</DependentUpon>

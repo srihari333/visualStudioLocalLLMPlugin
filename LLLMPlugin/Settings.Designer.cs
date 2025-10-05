@@ -1,4 +1,4 @@
-﻿namespace LLLMPlugin
+﻿namespace LLMPlugin
 {
     partial class Settings
     {

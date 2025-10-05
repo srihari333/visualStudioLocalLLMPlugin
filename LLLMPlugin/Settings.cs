@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace LLLMPlugin
+namespace LLMPlugin
 {
     public partial class Settings : Form
     {

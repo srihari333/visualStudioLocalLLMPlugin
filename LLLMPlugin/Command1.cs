@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Task = System.Threading.Tasks.Task;
 
-namespace LLLMPlugin
+namespace LLMPlugin
 {
     /// <summary>
     /// Command handler
@@ -99,7 +99,7 @@ namespace LLLMPlugin
             string selectedText = selection.Text;
             string defaultText = string.IsNullOrEmpty(selectedText) ? "" : selectedText;
 
-            MyForm form = new MyForm(defaultText);
+            PluginForm form = new PluginForm(defaultText);
             form.ShowDialog();
 
             if (form.IsConfirmed)
